@@ -1,0 +1,21 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+#export GOROOT=$HOME/go    #go语言安装包的位置
+#export PATH=$PATH:$GOROOT/bin 
+export GOPATH=$HOME/work     #自己的代码放在mygo下
+export PATH=$PATH:$GOPATH/bin
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin
+#nodejs
+export NODEJS_HOME=/home/hanyan3/app/node-v6.12.3-linux-x64
+export PATH=$NODEJS_HOME/bin:$PATH
+# User specific aliases and functions
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+#export LD_LIBRARY_PATH=/home/s/safe/lib
+export PATH="$PATH:$HOME/.rvm/bin"
